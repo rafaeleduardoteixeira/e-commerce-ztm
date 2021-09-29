@@ -1,7 +1,9 @@
+import HomePage from './HomePage.component';
+
 function App(): JSX.Element {
   return (
     <div className="App">
-      <h1>Hello React</h1>
+      <HomePage />
     </div>
   );
 }
