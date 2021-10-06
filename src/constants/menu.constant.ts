@@ -1,7 +1,7 @@
 // INTERFACE
 import IMenu from '../interface/menu.interface';
 
-const MenuItens: IMenu[] = [
+export const MenuItens: IMenu[] = [
   {
     title: 'HATS',
     subtitle: 'SHOP NOW',
@@ -23,5 +23,3 @@ const MenuItens: IMenu[] = [
     subtitle: 'SHOP NOW',
   },
 ];
-
-export default MenuItens;
