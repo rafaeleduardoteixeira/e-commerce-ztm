@@ -12,8 +12,14 @@ import MenuItens from '../menu-item/menu-item.component';
 
 const Directory = (): JSX.Element => (
   <div className="directory-menu">
-    {MenuItensConstant.map((itemMenu: IMenu) => (
-      <MenuItens title={itemMenu.title} subtitle={itemMenu.subtitle} />
+    {MenuItensConstant.map((itemMenu: IMenu, key: number) => (
+      <MenuItens
+        key={key}
+        title={itemMenu.title}
+        subtitle={itemMenu.subtitle}
+        imageURL={itemMenu.imageURL}
+        size={itemMenu.size}
+      />
     ))}
   </div>
 );
