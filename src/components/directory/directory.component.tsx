@@ -19,6 +19,7 @@ const Directory = (): JSX.Element => (
         subtitle={itemMenu.subtitle}
         imageURL={itemMenu.imageURL}
         size={itemMenu.size}
+        linkURL={itemMenu.linkURL}
       />
     ))}
   </div>
