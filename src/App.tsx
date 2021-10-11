@@ -1,6 +1,6 @@
 import { Switch, Route } from 'react-router-dom';
 import HomePage from './pages/homepage/home-page.component';
-import './App.css';
+import './App.scss';
 
 function App(): JSX.Element {
   return (
