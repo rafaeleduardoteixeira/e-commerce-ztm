@@ -1,3 +1,13 @@
+.sign-in {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    margin: 10px;
+  }
+}
+
 .menu-item {
   min-width: 30%;
   height: 240px;
@@ -20,6 +30,14 @@
     & .content {
       opacity: 0.9;
     }
+  }
+
+  &.small {
+    height: 30vh;
+  }
+
+  &.large {
+    height: 50vh;
   }
 
   &:first-child {
