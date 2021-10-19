@@ -10,16 +10,12 @@ const MenuItem = ({
   title,
   subtitle,
   imageURL,
-  size,
   linkURL,
 }: IMenu): JSX.Element => {
   const history = useHistory();
 
   return (
-    <div
-      className={`${size} menu-item`}
-      onClick={() => history.push(`/${linkURL}`)}
-    >
+    <div className="menu-item" onClick={() => history.push(`/${linkURL}`)}>
       <div
         className="background-image"
         style={{ backgroundImage: `url(${imageURL})` }}

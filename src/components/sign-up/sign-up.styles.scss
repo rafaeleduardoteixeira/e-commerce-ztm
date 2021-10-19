@@ -22,6 +22,14 @@
     }
   }
 
+  &.small {
+    height: 30vh;
+  }
+
+  &.large {
+    height: 50vh;
+  }
+
   &:first-child {
     margin-right: 7.5px;
   }
