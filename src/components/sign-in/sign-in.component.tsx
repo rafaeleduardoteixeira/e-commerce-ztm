@@ -7,6 +7,9 @@ import Button from '../button/button.component';
 // STYLES
 import './sign-in.styles.scss';
 
+// UTILS
+import { signInWithGoogle } from '../../util/initializeFireBase';
+
 const SignIn = (): JSX.Element => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -45,6 +48,7 @@ const SignIn = (): JSX.Element => {
           required
         />
         <Button type="submit">Sign In</Button>
+        <Button onClick={signInWithGoogle}>Sign In With Google</Button>
       </form>
     </div>
   );
